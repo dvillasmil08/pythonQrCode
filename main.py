@@ -6,7 +6,7 @@ def generate_round_qr_code_with_image(data, image_path, file_path):
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
-        box_size=10,  # Increase the box_size value for larger images
+        box_size=5,  # Increase the box_size value for larger images
         border=1,  # Reduce the border value for less boxy edges
     )
     qr.add_data(data)
