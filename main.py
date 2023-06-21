@@ -6,7 +6,7 @@ def generate_round_qr_code_with_image(data, image_path, file_path):
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_H,
-        box_size=40,  # Increase the box_size value for larger images
+        box_size=10,  # Increase the box_size value for larger images
         border=1,  # Reduce the border value for less boxy edges
     )
     qr.add_data(data)
@@ -37,7 +37,7 @@ def generate_round_qr_code_with_image(data, image_path, file_path):
 
 # Example usage
 data = "https://dvillasmil08.github.io/dvillasmil.github.io/"  # The data you want to encode in the QR code
-image_path = "Shock500.png"  # The path to the overlay image
+image_path = "Shock100.png"  # The path to the overlay image
 file_path = "qr_code_with_image.png"  # The path where you want to save the QR code image with the overlay
 
 generate_round_qr_code_with_image(data, image_path, file_path)
