@@ -36,7 +36,7 @@ def generate_round_qr_code_with_image(data, image_path, file_path):
 
 
 # Example usage
-data = "https://dvillasmil08.github.io/dvillasmil.github.io/"  # The data you want to encode in the QR code
+data = "https://dvillasmil08.github.io/dvillasmil/"  # The data you want to encode in the QR code
 image_path = "Shock100.png"  # The path to the overlay image
 file_path = "qr_code_with_image.png"  # The path where you want to save the QR code image with the overlay
 
